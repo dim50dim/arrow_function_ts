@@ -78,11 +78,13 @@ const f06 = () : void => {
 
 const f07 = (email: string) :string | boolean => {
       if(email.includes('@')) return email.trim().toLowerCase();
+     
       return false;
 }
     
  document.querySelector('.b-7').addEventListener('click', () : void => {
      document.querySelector('.out-7').textContent = String(f07(' glossuRaBBan@mail.ru ')); 
+
  });
 
 
