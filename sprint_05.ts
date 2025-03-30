@@ -76,10 +76,13 @@ const f06 = () : void => {
 // Task 07
 // Напишите стрелочную функцию f07 которая получает email и проверяет что срока содержит символ '@'. Если содержит то, возвращает строку, приведенную к нижнему регистру и с обрезанными по краям пробелами. Если строка не содержит @, то возвращает false. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-// const f07 =
- 
+const f07 = (email: string) :string | boolean => {
+      if(email.includes('@')) return email.trim().toLowerCase();
+      return false;
+}
+    
  document.querySelector('.b-7').addEventListener('click', () : void => {
-    //  document.querySelector('.out-7').textContent = String(f07(' glossuRaBBan@mail.ru ')); 
+     document.querySelector('.out-7').textContent = String(f07(' glossuRaBBan@mail.ru ')); 
  });
 
 

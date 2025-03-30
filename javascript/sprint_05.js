@@ -55,9 +55,13 @@ const f06 = () => {
 document.querySelector('.b-6').addEventListener('click', f06);
 // Task 07
 // Напишите стрелочную функцию f07 которая получает email и проверяет что срока содержит символ '@'. Если содержит то, возвращает строку, приведенную к нижнему регистру и с обрезанными по краям пробелами. Если строка не содержит @, то возвращает false. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
-// const f07 =
+const f07 = (email) => {
+    if (email.includes('@'))
+        return email.trim().toLowerCase();
+    return false;
+};
 document.querySelector('.b-7').addEventListener('click', () => {
-    //  document.querySelector('.out-7').textContent = String(f07(' glossuRaBBan@mail.ru ')); 
+    document.querySelector('.out-7').textContent = String(f07(' glossuRaBBan@mail.ru '));
 });
 // Task 08
 // Напишите стрелочную функцию f08 которая получает два числа как аргументы и возвращает случайное целое число в указанном диапазоне. Задайте параметрам значение по умолчанию 0 и 100. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
