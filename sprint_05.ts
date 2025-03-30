@@ -22,13 +22,17 @@ document.querySelector('.b-2').addEventListener('click', () : void => {
 // Task 03
 // Напишите стрелочную функцию f03 которая принимает строку и возвращает ее очищенную по краям (от пробелов), и приведенную к нижнему регистру. Предусмотрите что аргумент может быть не обязательный - в таком случае функция возвращает пустую строку. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-// const f03 = 
-
+const f03 = (str? : string) : string => {
+    if(str) return str.trim().toLowerCase();
+    return '';
+}
+ 
 document.querySelector('.b-3').addEventListener('click', () : void => {
-    // const result : string =  f03(' Paul Atreides ');
-    // document.querySelector('.out-3').textContent = result;
-    // console.log(result);
-    // console.log(result.length); 
+    const result : string =  f03(' Paul Atreides ');
+    // const result : string = f03('')
+    document.querySelector('.out-3').textContent = result;
+    console.log(result);
+    console.log(result.length); 
 });
 
 // Task 04
