@@ -38,19 +38,22 @@ document.querySelector('.b-3').addEventListener('click', () : void => {
 // Task 04
 // Напишите стрелочную функцию f04, которая принимает число - и возвращает true если число четное, и false в противном случае. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-// const f04 = 
+const f04 = (num : number) : boolean => num % 2 === 0;
 
 document.querySelector('.b-4').addEventListener('click', () : void => {
-    // document.querySelector('.out-4').textContent = String(f04(3)); 
+    document.querySelector('.out-4').textContent = String(f04(3)); 
 });
 
 // Task 05
 // Напишите стрелочную функцию f05 которая принимает класс input и возвращает ЧИСЛО введенное в данный input. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-// const f05 =
+const f05 = (num : string) : string => {
+       let input = document.querySelector(num) as HTMLInputElement;
+       return input.value;
+}
  
  document.querySelector('.b-5').addEventListener('click', () : void => {
-    //  document.querySelector('.out-5').textContent = String(f05('.i-5')); 
+     document.querySelector('.out-5').textContent = String(f05('.i-5')); 
  });
 
 
