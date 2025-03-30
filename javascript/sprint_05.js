@@ -7,11 +7,11 @@ document.querySelector('.b-1').addEventListener('click', () => {
 });
 // Task 02
 // Напишите стрелочную функцию f02 которая принимает строку и возвращает ее очищенную по краям (от пробелов), и приведенную к нижнему регистру. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
-// const f02 = 
+const f02 = (str) => str.trim().toLowerCase();
 document.querySelector('.b-2').addEventListener('click', () => {
-    // const result : string = f02('  Vladimir Harkonnen  ')
-    // document.querySelector('.out-2').textContent = result;
-    // console.log(result);
+    const result = f02('  Vladimir Harkonnen  ');
+    document.querySelector('.out-2').textContent = result;
+    console.log(result);
 });
 // Task 03
 // Напишите стрелочную функцию f03 которая принимает строку и возвращает ее очищенную по краям (от пробелов), и приведенную к нижнему регистру. Предусмотрите что аргумент может быть не обязательный - в таком случае функция возвращает пустую строку. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.

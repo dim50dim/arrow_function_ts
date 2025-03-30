@@ -11,12 +11,12 @@ document.querySelector('.b-1').addEventListener('click', () : void => {
 // Task 02
 // Напишите стрелочную функцию f02 которая принимает строку и возвращает ее очищенную по краям (от пробелов), и приведенную к нижнему регистру. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-// const f02 = 
+const f02 = (str : string) : string => str.trim().toLowerCase();
 
 document.querySelector('.b-2').addEventListener('click', () : void => {
-    // const result : string = f02('  Vladimir Harkonnen  ')
-    // document.querySelector('.out-2').textContent = result;
-    // console.log(result);
+    const result : string = f02('  Vladimir Harkonnen  ')
+    document.querySelector('.out-2').textContent = result;
+    console.log(result);
 });
 
 // Task 03
