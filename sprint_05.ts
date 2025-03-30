@@ -116,9 +116,13 @@ const f09 = (): string => {
  // Task 10
 // Напишите стрелочную функцию f10 которая при каждом клике увеличивает переменную angle на 30, а потом присваивает блоку .out-10 свойство transform: rotate(angledeg) где angle - значение из переменной angle. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-let angle = 0;
+let angle :number = 0;
 
-// const f10 = 
- 
-//  document.querySelector('.b-10').addEventListener('click', f10);
+const f10 = () : void => {
+     angle += 30;
+    let out =  document.querySelector('.out-10') as HTMLElement;
+    out.style.transform = `rotate(${angle}deg)`
+}
+
+ document.querySelector('.b-10').addEventListener('click', f10);
 
