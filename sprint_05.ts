@@ -102,12 +102,15 @@ const f08 = (min : number = 0, max : number = 100) => {
  // Task 09
 // Напишите стрелочную функцию f09 которая возвращает строку вида 'rgb(xxx,xxx,xxx)', где xxx - случайные числа от 0 до 255 генерируемые функцией f08. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-// const f09 = 
- 
+
+const f09 = (): string => {
+    const randomNum = (): number => Math.floor(Math.random() * 256);
+    return `rgb(${randomNum()},${randomNum()},${randomNum()})`;
+};
  document.querySelector('.b-9').addEventListener('click', () : void => {
-    // const color : string = f09();
-    // (<HTMLElement> document.querySelector('.out-9')).style.backgroundColor = color;
-    // document.querySelector('.out-9').textContent = color;
+    const color : string = f09();
+    (<HTMLElement> document.querySelector('.out-9')).style.backgroundColor = color;
+    document.querySelector('.out-9').textContent = color;
  });
 
  // Task 10

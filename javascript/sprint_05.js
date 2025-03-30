@@ -73,11 +73,14 @@ document.querySelector('.b-8').addEventListener('click', () => {
 });
 // Task 09
 // Напишите стрелочную функцию f09 которая возвращает строку вида 'rgb(xxx,xxx,xxx)', где xxx - случайные числа от 0 до 255 генерируемые функцией f08. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
-// const f09 = 
+const f09 = () => {
+    const randomNum = () => Math.floor(Math.random() * 256);
+    return `rgb(${randomNum()},${randomNum()},${randomNum()})`;
+};
 document.querySelector('.b-9').addEventListener('click', () => {
-    // const color : string = f09();
-    // (<HTMLElement> document.querySelector('.out-9')).style.backgroundColor = color;
-    // document.querySelector('.out-9').textContent = color;
+    const color = f09();
+    document.querySelector('.out-9').style.backgroundColor = color;
+    document.querySelector('.out-9').textContent = color;
 });
 // Task 10
 // Напишите стрелочную функцию f10 которая при каждом клике увеличивает переменную angle на 30, а потом присваивает блоку .out-10 свойство transform: rotate(angledeg) где angle - значение из переменной angle. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
