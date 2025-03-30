@@ -65,9 +65,11 @@ document.querySelector('.b-7').addEventListener('click', () => {
 });
 // Task 08
 // Напишите стрелочную функцию f08 которая получает два числа как аргументы и возвращает случайное целое число в указанном диапазоне. Задайте параметрам значение по умолчанию 0 и 100. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
-// const f08 = 
+const f08 = (min = 0, max = 100) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 document.querySelector('.b-8').addEventListener('click', () => {
-    //  document.querySelector('.out-8').textContent = String(f08(100, 110)); 
+    document.querySelector('.out-8').textContent = String(f08(100, 110));
 });
 // Task 09
 // Напишите стрелочную функцию f09 которая возвращает строку вида 'rgb(xxx,xxx,xxx)', где xxx - случайные числа от 0 до 255 генерируемые функцией f08. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.

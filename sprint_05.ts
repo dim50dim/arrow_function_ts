@@ -91,10 +91,12 @@ const f07 = (email: string) :string | boolean => {
  // Task 08
 // Напишите стрелочную функцию f08 которая получает два числа как аргументы и возвращает случайное целое число в указанном диапазоне. Задайте параметрам значение по умолчанию 0 и 100. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 
-// const f08 = 
+const f08 = (min : number = 0, max : number = 100) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
  
  document.querySelector('.b-8').addEventListener('click', () : void => {
-    //  document.querySelector('.out-8').textContent = String(f08(100, 110)); 
+     document.querySelector('.out-8').textContent = String(f08(100,110)); 
  });
 
  // Task 09
