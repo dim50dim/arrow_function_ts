@@ -60,13 +60,14 @@ const f05 = (num : string) : string => {
 // Task 06
 // Напишите стрелочную функцию - процедуру f06 которая получает строки из .i-61 и .i-62 и выводит в .out-6 большую строку. Тип данных для стрелочной функции пропишите самостоятельно.
 
-const f06 = (str1 : string, str2 : string) : void => {
+const f06 = () : void => {
       let input1 = document.querySelector('.i-61') as HTMLInputElement;
       let input2 = document.querySelector('.i-62') as HTMLInputElement;
-       str1 = input1.value;
-       str2 = input2.value;
-      let maxString = Math.max(str1.length, str2.length);
-      document.querySelector('.out-6').textContent = String(maxString);
+     let str1 = input1.value;
+     let  str2 = input2.value;
+     
+      let maxString = str1.length >= str2.length ? str1 : str2;
+      document.querySelector('.out-6').textContent = maxString;
 }
 
  document.querySelector('.b-6').addEventListener('click', f06);

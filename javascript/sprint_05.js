@@ -44,8 +44,15 @@ document.querySelector('.b-5').addEventListener('click', () => {
 });
 // Task 06
 // Напишите стрелочную функцию - процедуру f06 которая получает строки из .i-61 и .i-62 и выводит в .out-6 большую строку. Тип данных для стрелочной функции пропишите самостоятельно.
-const f06 = 
-//  document.querySelector('.b-6').addEventListener('click', f06);
+const f06 = () => {
+    let input1 = document.querySelector('.i-61');
+    let input2 = document.querySelector('.i-62');
+    let str1 = input1.value;
+    let str2 = input2.value;
+    let maxString = str1.length >= str2.length ? str1 : str2;
+    document.querySelector('.out-6').textContent = maxString;
+};
+document.querySelector('.b-6').addEventListener('click', f06);
 // Task 07
 // Напишите стрелочную функцию f07 которая получает email и проверяет что срока содержит символ '@'. Если содержит то, возвращает строку, приведенную к нижнему регистру и с обрезанными по краям пробелами. Если строка не содержит @, то возвращает false. Тип функций, аргументов во всех задачах спринта - прописываете самостоятельно.
 // const f07 =
